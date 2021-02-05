@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
 import { Container, Col, Row, Input, InputGroup, Button } from 'reactstrap'
-
 import utilAjax from '../utils/utilAjax'
 
 let URL = `${process.env.REACT_APP_API_URL}/usuario`;
@@ -12,7 +11,6 @@ function initialState() {
     return { name: '' }
 }
 
-// class Login extends Component {
 const Login = (props) => {
     const [values, setValues] = useState(initialState);
 
