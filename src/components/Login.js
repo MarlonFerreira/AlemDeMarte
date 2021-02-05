@@ -5,7 +5,7 @@ import { Container, Col, Row, Input, InputGroup, Button } from 'reactstrap'
 
 import utilAjax from '../utils/utilAjax'
 
-let URL = 'http://localhost:8082/usuario';
+let URL = `${process.env.REACT_APP_API_URL}/usuario`;
 
 
 function initialState() {
