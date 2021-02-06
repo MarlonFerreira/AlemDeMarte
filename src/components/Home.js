@@ -79,11 +79,12 @@ const Home = (props) => {
     function onChange(event) {
         const { value, name } = event.target
         utilAjax.requisicaoAjaxPatchJson(`${URL_API_USUARIO}?id=${id_usuario}&nome=${value}`)
-        .then(
-            setDados({ 
-                ...dados,
-                nome: value})
-        )
+            .then(
+                setDados({
+                    ...dados,
+                    nome: value
+                })
+            )
     }
 
     return (
@@ -126,6 +127,7 @@ const Home = (props) => {
             <Row className="justify-content-center">
                 <Col md="11">
                     <InputGroup style={{ marginTop: "65px" }} className="mb-3 justify-content-center">
+                        <h5 style={{ marginTop: "5px" }}>Editar nome: &nbsp;</h5>
                         <Input type="text" name="name" onChange={onChange} defaultValue={dados.nome}>
                         </Input>
                     </InputGroup>
