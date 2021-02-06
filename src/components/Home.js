@@ -71,7 +71,7 @@ const Home = (props) => {
             return false
         }
         else {
-            utilAjax.requisicaoAjaxPostJson(URL_API_LIKE, { id: imagem.photos[contador.numero].id, likes: dados.likes, id_usuario: id_usuario, like: dados.btn_like_mostrar })
+            utilAjax.requisicaoAjaxPostJson(URL_API_LIKE, { id: imagem.photos[contador.numero].id, likes: dados.likes, id_usuario: id_usuario, like: dados.like_mostrar })
             setCurtir({ curtir: 'Like' })
         }
     }
