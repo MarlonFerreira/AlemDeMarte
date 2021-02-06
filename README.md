@@ -79,4 +79,13 @@ Consumindo api "alemdemarteapi"
             Envia "like" do usuario via body
             
                 Recebe o status "200"
+                
+                
+        patch(URL_API_ALEMDEMARTEAPI/usuario)
+        
+            Envia "id" do usuário via query
+            
+            Envia "nome" do usuário via query
+            
+                Recebe resultado default sqlite em json da operação update
         
