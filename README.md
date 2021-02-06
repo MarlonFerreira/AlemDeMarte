@@ -66,3 +66,17 @@ Consumindo api "alemdemarteapi"
                 Recebe o "nome" do usuario em JSON
 
                 Recebe o "like" disponível do usuario em JSON
+                
+                
+        post(URL_API_ALEMDEMARTEAPI/like)
+        
+            Envia "id" da imagem via body
+            
+            Envia "likes" da imagem via body
+            
+            Envia "id" do usuario via body
+            
+            Envia "like" do usuario via body
+            
+                Recebe o status "200"
+        
